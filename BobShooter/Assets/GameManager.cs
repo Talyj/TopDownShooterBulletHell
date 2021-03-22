@@ -17,11 +17,13 @@ public class GameManager : MonoBehaviour
     {
         Singleton = this;
         new TAccessor<MoveModule>();
+        new TAccessor<SpawnModule>();
     }
 
     void Start()
     {
         Up.Add(new MoveSys());
+        Up.Add(new SpawnSys());
     }
 
     void Update()

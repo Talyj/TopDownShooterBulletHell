@@ -11,8 +11,6 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
-
-
         moveComponent = new MoveModule(speed.x * Input.GetAxis("Horizontal"), speed.y * Input.GetAxis("Vertical"), this.gameObject.transform);
 
         Modules = new List<ScriptableObject>();

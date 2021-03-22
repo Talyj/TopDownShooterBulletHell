@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     {
         Singleton = this;
         new TAccessor<MoveModule>();
+        new TAccessor<ShootModule>();
     }
 
     void Start()

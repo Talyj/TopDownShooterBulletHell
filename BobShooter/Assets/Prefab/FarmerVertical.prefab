@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4648874915601189262}
   m_Layer: 0
   m_Name: FarmerVertical
-  m_TagString: Untagged
+  m_TagString: FarmerVertical
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveComponent: {fileID: 0}
-  speed: {x: 0, y: -1}
+  farmer: {fileID: 5958712224996426515}
 --- !u!58 &4648874915601189262
 CircleCollider2D:
   m_ObjectHideFlags: 0

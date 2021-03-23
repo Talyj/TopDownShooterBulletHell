@@ -8,22 +8,26 @@
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
           <e p="FarmerMove.cs" t="Include" />
+          <e p="FarmerShoot.cs" t="Include" />
           <e p="FarmerSpawn.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Modules" t="Include">
             <e p="HealthModule.cs" t="Include" />
             <e p="MoveModule.cs" t="Include" />
+            <e p="ShootFarmerModule.cs" t="Include" />
             <e p="ShootModule.cs" t="Include" />
           </e>
           <e p="MyUpdater.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="Bullet.cs" t="Include" />
+            <e p="Fourche.cs" t="Include" />
             <e p="PlayerHealth.cs" t="Include" />
             <e p="PlayerMove.cs" t="Include" />
             <e p="PlayerShoot.cs" t="Include" />
           </e>
           <e p="SpawnModule.cs" t="Include" />
           <e p="Systeme" t="Include">
+            <e p="FarmerShootSys.cs" t="Include" />
             <e p="MoveSys.cs" t="Include" />
             <e p="ShootSys.cs" t="Include" />
             <e p="SpawnSys.cs" t="Include" />

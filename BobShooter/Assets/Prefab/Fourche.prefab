@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7894346112767624681}
-  - component: {fileID: 1512935217387641108}
   - component: {fileID: 7861632776448041321}
+  - component: {fileID: -4509905522327814609}
   m_Layer: 0
   m_Name: Fourche
   m_TagString: Untagged
@@ -32,20 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1512935217387641108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5503688935634022505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875dd8b0dff6aa04790bdedfed0f6853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  cock: {fileID: 4698814749975964036, guid: 9b3efba7b8e26d044950f31221cef3bd, type: 3}
 --- !u!212 &7861632776448041321
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -97,3 +83,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4509905522327814609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503688935634022505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70033c474d227549bd4fdb14b097ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  cock: {fileID: 4698814749975964036, guid: 0beda587bb4436246b5f91cb4e116c36, type: 3}

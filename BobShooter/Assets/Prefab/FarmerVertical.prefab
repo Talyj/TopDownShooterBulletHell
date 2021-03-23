@@ -39,9 +39,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5958712224996426519}
-  - component: {fileID: 3408608846124958767}
   - component: {fileID: 5958712224996426518}
   - component: {fileID: 5958712224996426513}
+  - component: {fileID: 2890037695743645235}
   - component: {fileID: 4648874915601189262}
   m_Layer: 0
   m_Name: FarmerVertical
@@ -65,22 +65,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3408608846124958767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5958712224996426515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5289bb7eebfcbe34ba49ad5049796cfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fourche: {fileID: 5503688935634022505, guid: 48eeab68646c4b542884aea18b41b629, type: 3}
-  firePoint: {fileID: 1426590725978764269}
-  speed: 0
-  shootDelay: 3
 --- !u!212 &5958712224996426518
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -146,6 +130,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveComponent: {fileID: 0}
   farmer: {fileID: 5958712224996426515}
+--- !u!114 &2890037695743645235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5958712224996426515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f81479237fb924cb9eb84255d8940c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fourche: {fileID: 5503688935634022505, guid: eaf1d53484711b34496f0b24107bd847, type: 3}
+  firePoint: {fileID: 1426590725978764269}
+  speed: 0
+  shootDelay: 3
 --- !u!58 &4648874915601189262
 CircleCollider2D:
   m_ObjectHideFlags: 0

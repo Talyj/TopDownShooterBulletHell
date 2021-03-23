@@ -12,6 +12,8 @@ public class FarmerMove : MonoBehaviour
     private float frequency;
     private float magnitude;
 
+    private float speedFarmer;
+
     [SerializeField]
     public GameObject farmer;
 
@@ -27,6 +29,7 @@ public class FarmerMove : MonoBehaviour
 
         frequency = 2.0F;
         magnitude = Random.Range(0.005F, 0.008F);
+        speedFarmer = 3.0F;
     }
 
     private void Update()
@@ -42,12 +45,12 @@ public class FarmerMove : MonoBehaviour
 
     private void MoveHorizontal() {
         transform.position += move + transform.up * Mathf.Sin(Time.time * frequency) * magnitude;
-        transform.position += transform.right * Time.deltaTime;
+        transform.position += transform.right * Time.deltaTime * speedFarmer;
     }
 
     private void MoveVertical() {
         transform.position += move + transform.right * Mathf.Sin(Time.time * frequency) * magnitude;
-        transform.position -= transform.up * Time.deltaTime;
+        transform.position -= transform.up * Time.deltaTime * speedFarmer;
     }
 }
  

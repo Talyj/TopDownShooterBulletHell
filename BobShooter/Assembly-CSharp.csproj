@@ -52,6 +52,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\Systeme\FarmerShootSys.cs" />
+     <Compile Include="Assets\Script\FarmerShoot.cs" />
      <Compile Include="Assets\Script\Modules\HealthModule.cs" />
      <Compile Include="Assets\Script\Modules\ShootModule.cs" />
      <Compile Include="Assets\Script\FarmerMove.cs" />
@@ -61,10 +63,12 @@
      <Compile Include="Assets\Script\GameManager.cs" />
      <Compile Include="Assets\Script\TAccessor.cs" />
      <Compile Include="Assets\Script\Systeme\SpawnSys.cs" />
+     <Compile Include="Assets\Script\Modules\ShootFarmerModule.cs" />
      <Compile Include="Assets\Script\FarmerSpawn.cs" />
      <Compile Include="Assets\Script\MyUpdater.cs" />
      <Compile Include="Assets\Script\Modules\MoveModule.cs" />
      <Compile Include="Assets\Script\Systeme\MoveSys.cs" />
+     <Compile Include="Assets\Script\Player\Fourche.cs" />
      <Compile Include="Assets\Script\Player\PlayerMove.cs" />
      <Compile Include="Assets\Script\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Script\SpawnModule.cs" />

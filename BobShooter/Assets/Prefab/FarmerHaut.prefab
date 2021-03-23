@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4374350772798466171}
   - component: {fileID: 4374350772798466168}
   - component: {fileID: 5660712929379149793}
-  - component: {fileID: 4523652680673833823}
-  m_Layer: 0
+  - component: {fileID: 8227166456674350900}
+  m_Layer: 8
   m_Name: FarmerHaut
   m_TagString: FarmerHorizontal
   m_Icon: {fileID: 0}
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 4adeaf2d2b1c7417e89f026626d8264f, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -284627385986098231, guid: 34d9aa1903881ee439c9e764fa0e07f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,8 +116,8 @@ MonoBehaviour:
   firePoint: {fileID: 8417776156980785619}
   speed: 0
   shootDelay: 3
---- !u!58 &4523652680673833823
-CircleCollider2D:
+--- !u!61 &8227166456674350900
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,8 +130,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.31, y: 2.3}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 1.31, y: 2.3}
+  m_EdgeRadius: 0
 --- !u!1 &8417776156980785619
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7913017873556870196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainFermier
   m_TagString: Untagged
   m_Icon: {fileID: 0}

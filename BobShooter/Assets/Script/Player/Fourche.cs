@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Fourche : MonoBehaviour
 {
-    public float speed = 2;
+    public float speed = 15;
     public Transform cock;
 
     void Start() {
@@ -13,7 +13,8 @@ public class Fourche : MonoBehaviour
 
     void Update()
     {
-        transform.position += (cock.position - transform.position) * speed * Time.deltaTime;
-        Destroy(gameObject, 3);
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        //transform.position += (cock.position - transform.position) * speed * Time.deltaTime;
+        Destroy(gameObject, 5);
     }
 }

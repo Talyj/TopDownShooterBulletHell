@@ -29,7 +29,7 @@ public class FarmerMove : MonoBehaviour
 
         frequency = 2.0F;
         magnitude = Random.Range(0.005F, 0.008F);
-        speedFarmer = 3.0F;
+        speedFarmer = 4.0F;
     }
 
     private void Update()

@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         new TAccessor<MoveModule>();
         new TAccessor<SpawnModule>();
         new TAccessor<ShootModule>();
+        new TAccessor<HealthModule>();
     }
 
     void Start()

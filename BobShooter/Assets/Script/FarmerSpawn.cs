@@ -29,11 +29,8 @@ public class FarmerSpawn : MonoBehaviour
 
     private void Spawn(Transform position, GameObject farmer, int grpMonster)
     {
-        for (int i = 0; i < grpMonster; i++)
-        {
-            Instantiate(farmer, position);
-            _nbMonsters += 1;
-        }
+        Instantiate(farmer, position);
+        _nbMonsters += 1;
     }
     private void Update()
     {
@@ -41,13 +38,10 @@ public class FarmerSpawn : MonoBehaviour
         spawnDelay -= Time.deltaTime;
         if (spawnDelay <= 0)
         {
-            for (int i = 0; i < _grpMonsters; i++)
-            {
-                Spawn(haut ,farmerHaut, _grpMonsters);
+            Spawn(haut ,farmerHaut, _grpMonsters);
                 Spawn(gauche, farmerVertical, _grpMonsters);
                 Spawn(droite, farmerVertical, _grpMonsters);
                 
-            }
             spawnDelay = spawnDelayRandom;
         }
     }

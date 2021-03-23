@@ -5,15 +5,16 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject bullet;
+    public GameObject egg;
     public Transform firePoint;
-    public float speed = 5;
+    public float speed;
 
     List<ScriptableObject> Modules;
     public ShootModule shootComponent;
 
     void Start()
     {
-        shootComponent = new ShootModule(bullet, firePoint, speed);
+        shootComponent = new ShootModule(bullet, firePoint, speed, egg);
 
         Modules = new List<ScriptableObject>();
         Modules.Add(shootComponent);
@@ -22,9 +23,14 @@ public class PlayerShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown (0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(bullet, firePoint);
+            Instantiate(bullet, firePoint.position, firePoint.rotation);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Instantiate(egg, firePoint.position, firePoint.rotation);
         }
     }
 }

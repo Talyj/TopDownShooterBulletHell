@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
         new TAccessor<SpawnModule>();
         new TAccessor<ShootModule>();
         new TAccessor<HealthModule>();
+        new TAccessor<ShootFarmerModule>();
     }
 
     void Start()
